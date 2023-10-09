@@ -1,15 +1,15 @@
 import React, { useState, useRef } from "react";
 
-import Toolbar from "./Toolbar/Toolbar";
-import Canvas from "./Canvas/Canvas";
-import MoveButtons from "./MoveButtons/MoveButtons";
+import { Toolbar } from "./Components/Toolbar/";
+import { Canvas } from "./Components/Canvas/";
+import { MoveButtons } from "./Components/MoveButtons/";
 
 interface Coordinates {
   x: number;
   y: number;
 }
 
-function App() {
+const App: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [coordinates, setCoordinates] = useState<Coordinates>({
     x: 100,
@@ -99,6 +99,6 @@ function App() {
       </main>
     </>
   );
-}
+};
 
 export default App;

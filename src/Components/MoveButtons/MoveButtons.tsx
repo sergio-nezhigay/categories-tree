@@ -1,11 +1,12 @@
 import React from "react";
+
 import "./MoveButtons.css";
 
-interface MoveButtonsProps {
+interface IMoveButtons {
   shiftContent: (dx: number, dy: number) => void;
 }
 
-export default function MoveButtons({ shiftContent }: MoveButtonsProps) {
+export const MoveButtons: React.FC<IMoveButtons> = ({ shiftContent }) => {
   return (
     <div>
       <button onClick={() => shiftContent(0, -50)} className="shift-button up">
@@ -28,4 +29,4 @@ export default function MoveButtons({ shiftContent }: MoveButtonsProps) {
       </button>
     </div>
   );
-}
+};

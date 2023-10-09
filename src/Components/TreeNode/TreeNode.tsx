@@ -1,20 +1,20 @@
 import React from "react";
-import EditableDiv from "../EditableDiv/EditableDiv";
 
+import { EditableDiv } from "../EditableDiv";
+import { INode } from "../../types/CommonTypes";
 import "./TreeNode.css";
-import { INode } from "../types/CommonTypes";
 
-interface TreeNodeProps {
+interface ITreeNode {
   treeData: INode;
   currentNode: INode;
   setTreeData: React.Dispatch<React.SetStateAction<INode>>;
 }
 
-export default function TreeNode({
+export const TreeNode: React.FC<ITreeNode> = ({
   treeData,
   currentNode,
   setTreeData,
-}: TreeNodeProps): JSX.Element | null {
+}): JSX.Element | null => {
   if (!currentNode || !currentNode.name) {
     return null;
   }
@@ -85,4 +85,4 @@ export default function TreeNode({
       {children && children.length > 0 && <ul className="list">{children}</ul>}
     </li>
   );
-}
+};

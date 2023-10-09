@@ -1,20 +1,19 @@
 import React from "react";
 
+import { INode } from "../../types/CommonTypes";
 import "./EditableDiv.css";
 
-import { INode } from "../types/CommonTypes";
-
-interface EditableDivProps {
+interface IEditableDiv {
   currentNode: INode;
   changeCurrentNode: (newNode: INode) => void;
   deleteCurrentNode: (currentNode: INode) => void;
 }
 
-export default function EditableDiv({
+export const EditableDiv: React.FC<IEditableDiv> = ({
   currentNode,
   changeCurrentNode,
   deleteCurrentNode,
-}: EditableDivProps) {
+}) => {
   const handleContentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     changeCurrentNode({ ...currentNode, name: e.target.value });
   };
@@ -59,7 +58,7 @@ export default function EditableDiv({
             size={currentNode.name.length}
             className={`cell level${currentNode.level % 4}`}
             onChange={handleContentChange}
-            readOnly={!currentNode.isEditing}
+            disabled={!currentNode.isEditing}
           />
 
           <span className="button-wrapper">
@@ -88,4 +87,6 @@ export default function EditableDiv({
       )}
     </>
   );
-}
+};
+
+// export EditableDiv;

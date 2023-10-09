@@ -5,32 +5,19 @@
   min-width: 40px;
   display: inline-block;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   background-color: #fdffff;
   color: rgba(0, 0, 0, 0.727);
   width: auto;
   margin-right: 10px;
+  cursor: grab;
 }
 
-.level0:read-only {
+.level0:disabled,
+.level1:disabled,
+.level2:disabled,
+.level3:disabled {
   background-color: #fdffff;
   color: rgba(0, 0, 0, 0.727);
-}
-
-.level1:read-only {
-  background-color: #ffa274;
-  color: #fff;
-}
-
-.level2:read-only {
-  background-color: #19b3d9;
-  color: #fff;
-}
-
-.level3:read-only {
-  background-color: #b2bdc6;
-  color: #fff;
 }
 
 .button-wrapper {

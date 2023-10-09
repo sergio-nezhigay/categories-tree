@@ -1,16 +1,15 @@
 import React from "react";
 
-import TreeNode from "../TreeNode/TreeNode";
-import { INode } from "../types/CommonTypes";
-
+import { TreeNode } from "../TreeNode";
+import { INode } from "../../types/CommonTypes";
 import "./Tree.css";
 
-interface TreeProps {
+interface ITree {
   treeData: INode;
   setTreeData: React.Dispatch<React.SetStateAction<INode>>;
 }
 
-export default function Tree({ treeData, setTreeData }: TreeProps) {
+export const Tree: React.FC<ITree> = ({ treeData, setTreeData }) => {
   return (
     <ul className="list">
       <TreeNode
@@ -20,4 +19,4 @@ export default function Tree({ treeData, setTreeData }: TreeProps) {
       />
     </ul>
   );
-}
+};

@@ -1,11 +1,11 @@
 import React, { RefObject, useState } from "react";
 
-import Tree from "../Tree/Tree";
-import { INode } from "../types/CommonTypes";
-import { initialTreeData } from "../data/initialTreeData";
+import { Tree } from "../Tree";
+import { INode } from "../../types/CommonTypes";
+import { initialTreeData } from "../../data/initialTreeData";
 import "./Canvas.css";
 
-interface CanvasProps {
+interface ICanvas {
   zoom: number;
   containerRef: RefObject<HTMLDivElement>;
   coordinates: { x: number; y: number };
@@ -14,14 +14,14 @@ interface CanvasProps {
   handleDragStart: (e: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-function Canvas({
+export const Canvas: React.FC<ICanvas> = ({
   zoom,
   containerRef,
   coordinates,
   handleMouseMove,
   handleDragEnd,
   handleDragStart,
-}: CanvasProps) {
+}) => {
   const [treeData, setTreeData] = useState<INode>(initialTreeData);
 
   return (
@@ -50,6 +50,4 @@ function Canvas({
       </div>
     </div>
   );
-}
-
-export default Canvas;
+};

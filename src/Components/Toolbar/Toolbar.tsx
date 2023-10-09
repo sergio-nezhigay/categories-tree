@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 
-import { zoomOptions } from "../data/zoomOptions";
+import { zoomOptions } from "../../data/zoomOptions";
 import "./Toolbar.css";
 
-interface ToolbarProps {
+interface IToolbar {
   handleZoomChange: (newZoom: number) => void;
   zoom: number;
   centerTree: () => void;
 }
 
-function Toolbar({ handleZoomChange, zoom, centerTree }: ToolbarProps) {
+export const Toolbar: React.FC<IToolbar> = ({
+  handleZoomChange,
+  zoom,
+  centerTree,
+}) => {
   const [selectedZoom, setSelectedZoom] = useState<number>(zoom);
 
   const handleZoomSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -64,6 +68,4 @@ function Toolbar({ handleZoomChange, zoom, centerTree }: ToolbarProps) {
       </button>
     </div>
   );
-}
-
-export default Toolbar;
+};

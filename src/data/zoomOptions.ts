@@ -1,9 +1,9 @@
-interface ZoomOption {
+interface IZoomOption {
   value: number;
   label: string;
 }
 
-export const zoomOptions: ZoomOption[] = [
+export const zoomOptions: IZoomOption[] = [
   { value: 0.25, label: "25%" },
   { value: 0.3, label: "30%" },
   { value: 0.4, label: "40%" },
