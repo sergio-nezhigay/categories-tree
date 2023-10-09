@@ -2,6 +2,7 @@
   "name": "categories-tree",
   "version": "0.1.1",
   "private": true,
+  "homepage": "https://sergio-nezhigay.github.io/categories-tree",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
