@@ -4,8 +4,6 @@ import Toolbar from "./Toolbar/Toolbar";
 import Canvas from "./Canvas/Canvas";
 import MoveButtons from "./MoveButtons/MoveButtons";
 
-import "./App.css";
-
 interface Coordinates {
   x: number;
   y: number;
