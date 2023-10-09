@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/categories-tree/static/css/main.c9d1196c.css",
+    "main.js": "/categories-tree/static/js/main.d33a355a.js",
+    "index.html": "/categories-tree/index.html",
+    "main.c9d1196c.css.map": "/categories-tree/static/css/main.c9d1196c.css.map",
+    "main.d33a355a.js.map": "/categories-tree/static/js/main.d33a355a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9d1196c.css",
+    "static/js/main.d33a355a.js"
+  ]
+}
