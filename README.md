@@ -1,6 +1,6 @@
 # 🌲 Category Tree Manager App
 
-![Category Tree Manager](screenshot.jpg)
+![Category Tree Manager](/public/screenshot.jpg)
 
 Category Tree Manager is a web application that allows you to easily manage and organize categories in a tree-like structure. You can view, add, rename, delete, and perform other operations on categories. The application is built using React and TypeScript, bundled with Webpack, and styled using HTML5 and CSS3 with Flexbox for layout.
 
@@ -34,13 +34,13 @@ Follow these steps to get the Category Tree Manager App up and running on your l
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/category-tree-manager.git
+   git clone https://github.com/sergio-nezhigay/categories-tree.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd category-tree-manager
+   cd categories-tree
    ```
 
 3. Install the project dependencies:
