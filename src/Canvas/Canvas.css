@@ -1,0 +1,37 @@
+.container {
+  height: 100vh;
+  transition: transform 0.1s linear;
+}
+
+.block {
+  position: absolute;
+  padding: 10px;
+  cursor: grab;
+}
+
+.canvas {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-circle-1 {
+  background-color: #fbe2e3;
+  position: absolute;
+  top: -6rem;
+  right: 25%;
+  height: 31.25rem;
+  width: 31.25rem;
+  border-radius: 50%;
+  filter: blur(10rem);
+}
+
+.bg-circle-2 {
+  background-color: #dbd7fb;
+  position: absolute;
+  top: -1rem;
+  right: 45%;
+  height: 31.25rem;
+  width: 50rem;
+  border-radius: 50%;
+  filter: blur(10rem);
+}

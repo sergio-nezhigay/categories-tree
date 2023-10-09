@@ -1,0 +1,55 @@
+.cell {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  min-width: 40px;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #fdffff;
+  color: rgba(0, 0, 0, 0.727);
+  width: auto;
+  margin-right: 10px;
+}
+
+.level0:read-only {
+  background-color: #fdffff;
+  color: rgba(0, 0, 0, 0.727);
+}
+
+.level1:read-only {
+  background-color: #ffa274;
+  color: #fff;
+}
+
+.level2:read-only {
+  background-color: #19b3d9;
+  color: #fff;
+}
+
+.level3:read-only {
+  background-color: #b2bdc6;
+  color: #fff;
+}
+
+.button-wrapper {
+  display: inline-flex;
+  width: 100px;
+  gap: 2px;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  width: 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.3);
+}

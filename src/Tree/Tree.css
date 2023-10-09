@@ -1,0 +1,15 @@
+.list {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.list .list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50px);
+  border-left: 1px solid #c5d0d9;
+  width: 0;
+  height: 20px;
+}

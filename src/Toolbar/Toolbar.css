@@ -1,0 +1,63 @@
+.toolbar {
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  right: 50px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #c5d0d8d2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.center-button,
+.zoom-in-button,
+.zoom-select,
+.zoom-out-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.center-button {
+  background-color: #2ecc71;
+}
+
+.center-button:hover,
+.zoom-in-button:hover,
+.zoom-out-button:hover {
+  background-color: #1d9d74;
+}
+
+.zoom-select {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db; /* Updated background color */
+  color: white; /* Updated text color */
+  border-radius: 4px;
+}
+
+.zoom-select:hover {
+  background-color: #2980b9; /* Updated hover background color */
+}
+
+.zoom-in-button,
+.zoom-out-button {
+  background-color: #e74c3c;
+}
+
+.zoom-in-button:hover,
+.zoom-out-button:hover {
+  background-color: #c0392b;
+}
